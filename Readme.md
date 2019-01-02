@@ -1,4 +1,4 @@
-# Destyle
+# Destyle.css
 
 Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that provides a clean styling slate for your project. All spacing (margin & padding) and font-sizing is removed and set to be inherited from its parent.
 
@@ -50,7 +50,7 @@ How to create the styles is up to the author. It can be by creating classes, com
 - `hr` is set to be a solid 1px line that inherits its color from its parent's text color
 - Inline elements that carry style (`b`, `i`, `strong`, etc.) are not reset.
 - `textarea` maintains its natural height.
-- `select` is reset using `appearance: none` which is not cross-browser, be advised when styling custom selects.
+- `select` is reset using `appearance: none` which is not cross-browser, be advised when styling custom selects. You can find a good guide [here](https://www.filamentgroup.com/lab/select-css.html)
 - HTML5 Inputs like `range` and `color` are not reset.
 
 ## Credits
