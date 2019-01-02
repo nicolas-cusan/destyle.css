@@ -12,6 +12,8 @@ Like [normalize.css](https://github.com/necolas/normalize.css) just what needs r
 $ npm install --save destyle.css
 ```
 
+Download: https://raw.githubusercontent.com/nicolas-cusan/destyle.css/master/destyle.css
+
 ## Usage
 
 Include `destyle.css` in the `head` of your HTML file before your main stylesheet.
