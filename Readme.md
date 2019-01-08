@@ -35,7 +35,7 @@ body {
 
 ## Why?
 
-Normalize.css just makes elements consistent between browsers and it does it well, but it does not remove the user agent's assumptions about how things have to look. Destyle.css removes these assumptions and makes the look of everything up to the stylesheet author.
+Normalize.css just makes elements consistent between browsers and it does it well, but it does not remove the user agent's assumptions about how things have to look. Destyle.css removes these assumptions and leaves the look to the stylesheet author.
 
 As an example it facilitates styling headings differently depending on the context in with they are shown.
 
