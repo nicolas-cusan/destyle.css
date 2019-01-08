@@ -1,10 +1,12 @@
-# Destyle.css
+# destyle.css
+
+[![npm][npm-image]][npm-url] [![license][license-image]][license-url]
 
 Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that provides a clean styling slate for your project. All spacing (margin & padding) and font-sizing is removed and set to be inherited from its parent.
 
 This approach avoids having to reset styles when creating different styled instances of the same element, it also contributes to the separation of presentation and semantics.
 
-Like [normalize.css](https://github.com/necolas/normalize.css) just what needs reseting is reset to avoid bloat in the browser's style inspector.
+Like [normalize.css](https://github.com/necolas/normalize.css), just what needs reseting is reset to avoid bloat in the browser's style inspector.
 
 ## Installation
 
@@ -56,3 +58,8 @@ How to create the styles is up to the author. It can be by creating classes, com
 ## Credits
 
 This project is heavily inspired by [normalize.css](https://github.com/necolas/normalize.css) and the original [reset](https://meyerweb.com/eric/tools/css/reset/) by Eric Meyer. The source of the test page is from [html5-test-page](https://github.com/cbracco/html5-test-page/pulls).
+
+[license-image]: https://img.shields.io/npm/l/destyle.css.svg?style=flat-square
+[license-url]: LICENSE
+[npm-image]: https://img.shields.io/npm/v/destyle.css.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/destyle.css
