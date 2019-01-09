@@ -1,15 +1,22 @@
 {
   "name": "destyle.css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Opinionated reset stylesheet that provides a clean styling slate for your project.",
   "main": "destyle.css",
   "style": "destyle.css",
-  "files": ["destyle.css", "LICENSE"],
+  "files": [
+    "destyle.css",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nicolas-cusan/destyle.css.git"
   },
-  "keywords": ["css", "reset-css", "normalize-css"],
+  "keywords": [
+    "css",
+    "reset-css",
+    "normalize-css"
+  ],
   "license": "MIT",
   "bugs": "https://github.com/nicolas-cusan/destyle.css/issues",
   "homepage": "https://github.com/nicolas-cusan/destyle.css#readme"
