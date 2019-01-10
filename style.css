@@ -39,20 +39,6 @@ body {
   margin-bottom: 50px;
 }
 
-.btn {
-  background-color: dodgerblue;
-  color: #fff;
-  padding: 0.8em 1.4em;
-  font-weight: 600;
-  border-radius: 3px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.btn + .btn {
-  margin-left: 10px;
-}
-
 .features {
   margin-bottom: 60px;
 }
@@ -72,6 +58,41 @@ body {
 
 .features a {
   text-decoration: underline;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 0.8em 1.4em;
+  font-weight: 600;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.social {
+  padding-top: 20px;
+}
+
+.social a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.social a:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media (min-width: 500px) {
+  .social {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    padding-top: 0;
+  }
 }
 
 /* Footer
