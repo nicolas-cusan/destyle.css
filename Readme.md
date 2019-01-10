@@ -9,7 +9,7 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 - Ensures consistency across browsers (thanks normalize.css)
 - Resets spacing (margin & padding)
 - Resets font-size and line-height
-- Prevents the necessity of reseting defaults styles when authoring stylesheets
+- Prevents the necessity of reseting user agent styles
 - Prevents style inspector bloat by only targeting what is necessary
 - Contributes to the separation of presentation and semantics
 - Works well with all kind of styling approaches, atomic libraries like [tachyons](https://tachyons.io/), component based styling like css-in-js in [React](https://reactjs.org), good 'ol css, ...
