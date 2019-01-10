@@ -47,7 +47,7 @@ body {
 }
 
 .features {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .features li {
@@ -65,6 +65,42 @@ body {
 
 .features a {
   text-decoration: underline;
+}
+
+.install {
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+.install code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.install span,
+.install a {
+  color: dodgerblue;
+}
+
+.install a:active,
+.install a:focus,
+.install a:hover {
+  text-decoration: underline;
+}
+
+.install span,
+.install-link {
+  font-size: 90%;
+}
+
+@media (min-width: 500px) {
+  .actions {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .btn {
@@ -101,9 +137,7 @@ body {
 
 @media (min-width: 500px) {
   .social {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 40px;
+    margin-left: auto;
     padding-top: 0;
   }
 }
