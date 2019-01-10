@@ -8,7 +8,12 @@ body {
   font: 16px/1.4 'Fira Sans', sans-serif;
   color: #333;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -19,6 +24,8 @@ body {
   padding: 30px 20px;
   max-width: 600px;
   margin: 0 auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 
@@ -108,6 +115,8 @@ body {
   background-color: #f4f4f4;
   text-align: center;
   padding: 30px 20px;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
   flex: none;
 }
 
@@ -119,8 +128,15 @@ body {
   ========================================================== */
 
 .compare-container {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -130,6 +146,8 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px 20px;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
   flex: none;
   width: 100%;
 }
@@ -187,7 +205,11 @@ body {
 
 @media (min-width: 750px) {
   .compare {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
   }
 }
@@ -198,7 +220,12 @@ body {
 
 @media (min-width: 750px) {
   .compare-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 33.33333%;
     padding: 20px 20px 0;
@@ -208,6 +235,8 @@ body {
 
 @media (min-width: 750px) {
   .compare-item-header {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
     flex: none;
     margin-bottom: 0;
     padding-bottom: 10px;
@@ -257,6 +286,8 @@ body {
   .compare-frame {
     display: block;
     width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
     flex: 1 0 auto;
   }
 }
