@@ -49,7 +49,7 @@ body {
   padding-left: 30px;
 }
 .features li::before {
-  content: '️️☑️';
+  content: '☑️';
   position: absolute;
   top: 0.2em;
   left: 0;
@@ -63,15 +63,21 @@ body {
 .btn {
   background-color: dodgerblue;
   color: #fff;
-  padding: 0.8em 1.4em;
+  padding: 0.7em 1.4em;
   font-weight: 600;
   border-radius: 3px;
   display: inline-block;
   vertical-align: middle;
+  border: 2px solid dodgerblue;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: dodgerblue;
 }
 
 .btn + .btn {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .social {
@@ -83,14 +89,14 @@ body {
   vertical-align: middle;
 }
 .social a:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 @media (min-width: 500px) {
   .social {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 50px;
+    margin-left: 40px;
     padding-top: 0;
   }
 }
