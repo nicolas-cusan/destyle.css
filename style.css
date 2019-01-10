@@ -12,7 +12,7 @@ body {
   flex-direction: column;
 }
 
-/* General
+/* Home
   ========================================================== */
 
 .container {
@@ -36,7 +36,7 @@ body {
 
 .sub-title {
   font-size: 1.4em;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .btn {
@@ -52,6 +52,30 @@ body {
 .btn + .btn {
   margin-left: 10px;
 }
+
+.features {
+  margin-bottom: 60px;
+}
+
+.features li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+.features li::before {
+  content: '️️☑️';
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  font-size: 90%;
+}
+
+.features a {
+  text-decoration: underline;
+}
+
+/* Footer
+  ========================================================== */
 
 .footer {
   background-color: #f4f4f4;
@@ -168,6 +192,12 @@ body {
   font-weight: 600;
   font-size: 1.2em;
   margin-bottom: 4px;
+}
+
+.compare-title a:active,
+.compare-title a:focus,
+.compare-title a:hover {
+  color: dodgerblue;
 }
 
 @media (min-width: 750px) {
