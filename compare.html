@@ -9,51 +9,77 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="header-back" href="index.html">👈 Back</a>
-      <h1 class="header-title">Compare resets</h1>
+    <main class="compare-container">
+      <header class="header">
+        <a class="header-back" href="index.html">👈 Back</a>
+        <h1 class="header-title">Compare resets</h1>
 
-      <p class="header-note">⬅️ Use a larger screen to view side-by-side ➡️</p>
-    </header>
+        <p class="header-note">
+          ⚠️ Use a larger screen to view side-by-side comparison
+        </p>
+      </header>
 
-    <div class="compare">
-      <div class="compare-item">
-        <h2 class="compare-title"><a href="index.html">Destyle.css</a></h2>
+      <div class="compare">
+        <div class="compare-item">
+          <div class="compare-item-header">
+            <h2 class="compare-title"><a href="index.html">Destyle.css</a></h2>
 
-        <iframe class="compare-frame" src="test.html" frameborder="0"></iframe>
+            <a class="compare-btn" href="test.css">
+              View destyle.css test page
+            </a>
+          </div>
 
-        <a class="compare-btn" href="test.css">View destyle.css test page 🔴</a>
+          <iframe
+            class="compare-frame"
+            src="test.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div class="compare-item">
+          <div class="compare-item-header">
+            <h2 class="compare-title">
+              <a href="http://necolas.github.io/normalize.css/">
+                Normalize.css
+              </a>
+            </h2>
+
+            <a class="compare-btn" href="normalize.css">
+              View normalize.css test page
+            </a>
+          </div>
+
+          <iframe
+            class="compare-frame"
+            src="normalize.html"
+            frameborder="0"
+          ></iframe>
+        </div>
+
+        <div class="compare-item">
+          <div class="compare-item-header">
+            <h2 class="compare-title">
+              <a href="https://meyerweb.com/eric/tools/css/reset/">
+                Eric Meyer's reset
+              </a>
+            </h2>
+
+            <a class="compare-btn" href="reset.css">
+              View Eric Meyer's reset test page
+            </a>
+          </div>
+
+          <iframe
+            class="compare-frame"
+            src="reset.html"
+            frameborder="0"
+          ></iframe>
+        </div>
       </div>
-
-      <div class="compare-item">
-        <h2 class="compare-title">
-          <a href="http://necolas.github.io/normalize.css/">Normalize.css</a>
-        </h2>
-
-        <a class="compare-btn" href="normalize.css">
-          View normalize.css test page ⬛️
-        </a>
-
-        <iframe
-          class="compare-frame"
-          src="normalize.html"
-          frameborder="0"
-        ></iframe>
-      </div>
-
-      <div class="compare-item">
-        <h2 class="compare-title">
-          <a href="https://meyerweb.com/eric/tools/css/reset/">
-            Eric Meyer's reset
-          </a>
-        </h2>
-
-        <a class="compare-btn" href="reset.css">
-          View Eric Meyer's resettest page 🔴
-        </a>
-
-        <iframe class="compare-frame" src="reset.html" frameborder="0"></iframe>
-      </div>
-    </div>
+    </main>
+    <footer class="footer">
+      ©2019 — Made with love by
+      <a href="https://twitter.com/n_cusan">Nicolas Cusan</a>
+    </footer>
   </body>
 </html>
