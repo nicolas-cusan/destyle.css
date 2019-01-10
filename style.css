@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
+
+body {
+  font: 16px/1.4 'Fira Sans', sans-serif;
+  color: #333;
+}
+
+/* General
+  ========================================================== */
+
+.container {
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (min-width: 400px) {
+  .container {
+    padding: 50px 20px;
+  }
+}
+
+.main-title {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-size: 1.4em;
+  margin-bottom: 70px;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 0.8em 1.4em;
+  font-weight: 600;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn-small {
+}
+
+/* Compare
+  ========================================================== */
+
+.header {
+  margin: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.header-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 0.4em;
+}
+
+.header-back:active,
+.header-back:focus,
+.header-back:hover {
+  text-decoration: underline;
+}
+
+.header-note {
+  padding-top: 30px;
+  font-size: 95%;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 750px) {
+  .header-note {
+    display: none;
+  }
+}
+
+/* Compare */
+
+.compare {
+}
+
+.compare-item {
+  padding: 0 20px 20px;
+}
+
+@media (min-width: 750px) {
+  .compare-item {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+}
+
+.compare-title {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+.compare-btn {
+}
+
+@media (min-width: 750px) {
+  .compare-btn {
+    display: none;
+  }
+}
+
+.compare-frame {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .compare-frame {
+    display: block;
+    width: 100%;
+  }
+}

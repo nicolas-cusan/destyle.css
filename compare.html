@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Destyle.css - Compare to other resets</title>
+    <link rel="stylesheet" href="destyle.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header-back" href="index.html">👈 Back</a>
+      <h1 class="header-title">Compare resets</h1>
+
+      <p class="header-note">⬅️ Use a larger screen to view side-by-side ➡️</p>
+    </header>
+
+    <div class="compare">
+      <div class="compare-item">
+        <h2 class="compare-title"><a href="index.html">Destyle.css</a></h2>
+
+        <iframe class="compare-frame" src="test.html" frameborder="0"></iframe>
+
+        <a class="compare-btn" href="test.css">View destyle.css test page 🔴</a>
+      </div>
+
+      <div class="compare-item">
+        <h2 class="compare-title">
+          <a href="http://necolas.github.io/normalize.css/">Normalize.css</a>
+        </h2>
+
+        <a class="compare-btn" href="normalize.css">
+          View normalize.css test page ⬛️
+        </a>
+
+        <iframe
+          class="compare-frame"
+          src="normalize.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+
+      <div class="compare-item">
+        <h2 class="compare-title">
+          <a href="https://meyerweb.com/eric/tools/css/reset/">
+            Eric Meyer's reset
+          </a>
+        </h2>
+
+        <a class="compare-btn" href="reset.css">
+          View Eric Meyer's resettest page 🔴
+        </a>
+
+        <iframe class="compare-frame" src="reset.html" frameborder="0"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
