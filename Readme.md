@@ -9,7 +9,7 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 - Ensures consistency across browsers (thanks normalize.css)
 - Resets spacing (margin & padding)
 - Resets font-size and line-height
-- Prevents the necessity of reseting user agent styles
+- Prevents the necessity of reseting (most) user agent styles
 - Prevents style inspector bloat by only targeting what is necessary
 - Contributes to the separation of presentation and semantics
 - Works well with all kind of styling approaches, atomic libraries like [tachyons](https://tachyons.io/), component based styling like css-in-js in [React](https://reactjs.org), good 'ol css, ...
@@ -114,9 +114,10 @@ How to create the styles is up to the author, it can be by creating classes, com
 - `code`, `pre`, `kbd`, `samp` maintain a monospaced font-family
 - `hr` is set to be a solid 1px line that inherits its color from its parent's text color
 - Inline elements that carry style (`b`, `i`, `strong`, etc.) are not reset.
-- `textarea` maintains its natural height.
+- `textarea` maintains its default height.
+- `canvas` and `iframe` maintain their default width and height.
 - `select` is reset using `appearance: none` which is not cross-browser, be advised when styling custom selects. You can find a good guide [here](https://www.filamentgroup.com/lab/select-css.html)
-- HTML5 Inputs like `range` and `color` are not reset.
+- HTML5 inputs and elements like `range`, `color`, `meter` and `progress` are not reset.
 
 ## Credits
 
