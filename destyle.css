@@ -1,4 +1,4 @@
-/*! de-style.css v1.0.3 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! de-style.css v1.0.5 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model
    ========================================================================== */
@@ -283,6 +283,13 @@ button,
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
+}
+
+button[disabled],
+[type='button'][disabled],
+[type='reset'][disabled],
+[type='submit'][disabled] {
+  cursor: default;
 }
 
 /**
