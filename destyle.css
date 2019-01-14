@@ -285,6 +285,13 @@ button,
   appearance: none;
 }
 
+button[disabled],
+[type='button'][disabled],
+[type='reset'][disabled],
+[type='submit'][disabled] {
+  cursor: default;
+}
+
 /**
  * Remove the inner border and padding in Firefox.
  */
