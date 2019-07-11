@@ -1,4 +1,4 @@
-/*! de-style.css v1.0.5 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! de-style.css v1.0.6 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model
    ========================================================================== */
@@ -225,11 +225,18 @@ iframe {
 /* Forms
    ========================================================================== */
 
+/**
+ * Reset form fields to make them styleable
+ * 1. Reset radio and checkbox to preserve their look in iOS.
+ */
+
 button,
 input,
 optgroup,
 select,
 textarea {
+  -webkit-appearance: none;
+  appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -238,16 +245,19 @@ textarea {
   padding: 0;
   margin: 0;
   outline: 0;
+  border-radius: 0;
 }
 
-/**
- * Remove all Style fro select elements. Does not quite work cross-browser
- */
+[type='checkbox'] {
+  /* 1 */
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
 
-select {
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 0;
+[type='radio'] {
+  /* 1 */
+  -webkit-appearance: radio;
+  appearance: radio;
 }
 
 /**
@@ -358,14 +368,12 @@ textarea {
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
+ * 1. Remove the padding in IE 10.
  */
 
 [type='checkbox'],
 [type='radio'] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  padding: 0; /* 1 */
 }
 
 /**
@@ -378,13 +386,11 @@ textarea {
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
+ * 1. Correct the outline style in Safari.
  */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  outline-offset: -2px; /* 1 */
 }
 
 /**
