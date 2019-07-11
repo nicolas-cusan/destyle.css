@@ -121,7 +121,7 @@ How to create the styles is up to the author, it can be by creating classes, com
 
 ## Credits
 
-This project is heavily inspired by [normalize.css](https://github.com/necolas/normalize.css) and the original [reset](https://meyerweb.com/eric/tools/css/reset/) by Eric Meyer. The source of the test page is from [html5-test-page](https://github.com/cbracco/html5-test-page/pulls).
+This project is heavily inspired by [normalize.css](https://github.com/necolas/normalize.css) and the original [reset](https://meyerweb.com/eric/tools/css/reset/) by Eric Meyer. The source of the test page is from [html5-test-page](https://github.com/cbracco/html5-test-page).
 
 [license-image]: https://img.shields.io/npm/l/destyle.css.svg?style=flat-square
 [license-url]: LICENSE
