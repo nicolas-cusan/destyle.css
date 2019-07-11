@@ -7,7 +7,7 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 ## What it does
 
 - Ensures consistency across browsers (thanks normalize.css)
-- Resets spacing (margin & padding)
+- Removes spacing (margin & padding)
 - Resets font-size and line-height
 - Prevents the necessity of reseting (most) user agent styles
 - Prevents style inspector bloat by only targeting what is necessary
