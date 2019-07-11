@@ -1,4 +1,4 @@
-/*! de-style.css v1.0.5 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v1.0.6 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model
    ========================================================================== */
@@ -13,13 +13,13 @@
 }
 
 /* Document
-   ========================================================================== */
+     ========================================================================== */
 
 /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- * 3. Remove gray overlay on links for iOS.
- */
+   * 1. Correct the line height in all browsers.
+   * 2. Prevent adjustments of font size after orientation changes in iOS.
+   * 3. Remove gray overlay on links for iOS.
+   */
 
 html {
   line-height: 1.15; /* 1 */
@@ -28,26 +28,26 @@ html {
 }
 
 /* Sections
-   ========================================================================== */
+     ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
- */
+   * Remove the margin in all browsers.
+   */
 
 body {
   margin: 0;
 }
 
 /**
- * Render the `main` element consistently in IE.
- */
+   * Render the `main` element consistently in IE.
+   */
 
 main {
   display: block;
 }
 
 /* Vertical rhythm
-   ========================================================================== */
+     ========================================================================== */
 
 p,
 table,
@@ -62,7 +62,7 @@ dl {
 }
 
 /* Headings
-   ========================================================================== */
+     ========================================================================== */
 
 h1,
 h2,
@@ -77,7 +77,7 @@ h6 {
 }
 
 /* Lists (enumeration)
-   ========================================================================== */
+     ========================================================================== */
 
 ul,
 ol {
@@ -87,7 +87,7 @@ ol {
 }
 
 /* Lists (definition)
-   ========================================================================== */
+     ========================================================================== */
 
 dt {
   font-weight: bold;
@@ -98,12 +98,12 @@ dd {
 }
 
 /* Grouping content
-   ========================================================================== */
+     ========================================================================== */
 
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
 
 hr {
   box-sizing: content-box; /* 1 */
@@ -116,9 +116,9 @@ hr {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 
 pre {
   font-family: monospace, monospace; /* 1 */
@@ -130,11 +130,11 @@ address {
 }
 
 /* Text-level semantics
-   ========================================================================== */
+     ========================================================================== */
 
 /**
- * Remove the gray background on active links in IE 10.
- */
+   * Remove the gray background on active links in IE 10.
+   */
 
 a {
   background-color: transparent;
@@ -143,9 +143,9 @@ a {
 }
 
 /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
 
 abbr[title] {
   border-bottom: none; /* 1 */
@@ -154,8 +154,8 @@ abbr[title] {
 }
 
 /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
 
 b,
 strong {
@@ -163,9 +163,9 @@ strong {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
 
 code,
 kbd,
@@ -175,17 +175,17 @@ samp {
 }
 
 /**
- * Add the correct font size in all browsers.
- */
+   * Add the correct font size in all browsers.
+   */
 
 small {
   font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
 
 sub,
 sup {
@@ -204,11 +204,11 @@ sup {
 }
 
 /* Embedded content
-   ========================================================================== */
+     ========================================================================== */
 
 /**
- * Remove the border on images inside links in IE 10.
- */
+   * Remove the border on images inside links in IE 10.
+   */
 
 img {
   border-style: none;
@@ -223,13 +223,20 @@ iframe {
 }
 
 /* Forms
-   ========================================================================== */
+     ========================================================================== */
+
+/**
+   * Reset form fields to make them styleable
+   * 1. Reset radio and checkbox to preserve their look in iOS.
+   */
 
 button,
 input,
 optgroup,
 select,
 textarea {
+  -webkit-appearance: none;
+  appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -238,22 +245,26 @@ textarea {
   padding: 0;
   margin: 0;
   outline: 0;
-}
-
-/**
- * Remove all Style fro select elements. Does not quite work cross-browser
- */
-
-select {
-  -webkit-appearance: none;
-  appearance: none;
   border-radius: 0;
+  text-align: inherit;
+}
+
+[type='checkbox'] {
+  /* 1 */
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type='radio'] {
+  /* 1 */
+  -webkit-appearance: radio;
+  appearance: radio;
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
 
 button,
 input {
@@ -262,9 +273,9 @@ input {
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
 
 button,
 select {
@@ -273,8 +284,8 @@ select {
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
 
 button,
 [type='button'],
@@ -293,8 +304,8 @@ button[disabled],
 }
 
 /**
- * Remove the inner border and padding in Firefox.
- */
+   * Remove the inner border and padding in Firefox.
+   */
 
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
@@ -305,8 +316,8 @@ button::-moz-focus-inner,
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
- */
+   * Restore the focus styles unset by the previous rule.
+   */
 
 button:-moz-focusring,
 [type='button']:-moz-focusring,
@@ -316,8 +327,8 @@ button:-moz-focusring,
 }
 
 /**
- * Reset to invisible
- */
+   * Reset to invisible
+   */
 
 fieldset {
   margin: 0;
@@ -327,11 +338,11 @@ fieldset {
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
 
 legend {
   color: inherit; /* 2 */
@@ -342,35 +353,33 @@ legend {
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
 
 progress {
   vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
- */
+   * Remove the default vertical scrollbar in IE 10+.
+   */
 
 textarea {
   overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
+   * 1. Remove the padding in IE 10.
+   */
 
 [type='checkbox'],
 [type='radio'] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  padding: 0; /* 1 */
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
 
 [type='number']::-webkit-inner-spin-button,
 [type='number']::-webkit-outer-spin-button {
@@ -378,27 +387,25 @@ textarea {
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
+   * 1. Correct the outline style in Safari.
+   */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  outline-offset: -2px; /* 1 */
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
 
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
@@ -406,8 +413,8 @@ textarea {
 }
 
 /**
- * Fix placeholder font properties inheritance.
- */
+   * Fix placeholder font properties inheritance.
+   */
 
 ::-webkit-input-placeholder {
   font: inherit;
@@ -426,34 +433,34 @@ textarea {
 }
 
 /**
- * Clickable labels
- */
+   * Clickable labels
+   */
 
 label[for] {
   cursor: pointer;
 }
 
 /* Interactive
-   ========================================================================== */
+     ========================================================================== */
 
 /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
 
 details {
   display: block;
 }
 
 /*
- * Add the correct display in all browsers.
- */
+   * Add the correct display in all browsers.
+   */
 
 summary {
   display: list-item;
 }
 
 /* Table
-   ========================================================================== */
+     ========================================================================== */
 
 table {
   border-collapse: collapse;
@@ -475,19 +482,19 @@ th {
 }
 
 /* Misc
-   ========================================================================== */
+     ========================================================================== */
 
 /**
- * Add the correct display in IE 10+.
- */
+   * Add the correct display in IE 10+.
+   */
 
 template {
   display: none;
 }
 
 /**
- * Add the correct display in IE 10.
- */
+   * Add the correct display in IE 10.
+   */
 
 [hidden] {
   display: none;
