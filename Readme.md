@@ -18,6 +18,8 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 
 [Eric Meyer's reset](https://meyerweb.com/eric/tools/css/reset/) resets properties on elements that do not need it, are unused or even deprecated, this creates bloat in the browser's style inspector which makes developing and debugging less efficient. [Normalize.css](https://github.com/necolas/normalize.css) makes elements look consistent across browsers and it does it well, but it does not remove the user agent's assumptions about how things look. Destyle.css targets both reseting & normalization.
 
+Compare the results [here](https://nicolas-cusan.github.io/destyle.css/compare.html).
+
 ## Installation
 
 ```shell
