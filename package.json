@@ -1,6 +1,6 @@
 {
   "name": "destyle.css",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Opinionated reset stylesheet that provides a clean styling slate for your project.",
   "main": "destyle.css",
   "style": "destyle.css",
