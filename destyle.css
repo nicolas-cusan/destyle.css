@@ -240,7 +240,7 @@ textarea {
   vertical-align: middle;
   color: inherit;
   font: inherit;
-  border: 0;
+  border: inherit;
   background: transparent;
   padding: 0;
   margin: 0;
