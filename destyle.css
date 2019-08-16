@@ -413,26 +413,6 @@ textarea {
 }
 
 /**
-   * Fix placeholder font properties inheritance.
-   */
-
-::-webkit-input-placeholder {
-  font: inherit;
-}
-
-:-ms-input-placeholder {
-  font: inherit;
-}
-
-::-ms-input-placeholder {
-  font: inherit;
-}
-
-::placeholder {
-  font: inherit;
-}
-
-/**
    * Clickable labels
    */
 
