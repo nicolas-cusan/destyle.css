@@ -69,7 +69,6 @@ body {
 
 .install {
   margin-bottom: 50px;
-  text-align: right;
 }
 
 .install code {
@@ -77,12 +76,23 @@ body {
   background-color: #f4f4f4;
   padding: 10px 15px;
   margin-bottom: 10px;
-  text-align: left;
+}
+
+.install-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .install span,
 .install a {
   color: dodgerblue;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
 }
 
 .install a:active,
@@ -94,6 +104,15 @@ body {
 .install span,
 .install-link {
   font-size: 90%;
+}
+
+.install span::before,
+.install span::after {
+  content: '\00a0';
+}
+
+.install-link-first {
+  margin-right: auto;
 }
 
 @media (min-width: 500px) {
@@ -146,25 +165,16 @@ body {
   }
 }
 
-/* Browserstack */
-/* ============================================ */
-
 .bs {
   padding-top: 50px;
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; */
 }
 
-.bs_label {
+.bs-label {
   margin-bottom: 10px;
   opacity: 0.5;
 }
 
-.bs_logo {
+.bs-logo {
   width: 130px;
 }
 
