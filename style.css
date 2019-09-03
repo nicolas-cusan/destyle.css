@@ -146,6 +146,28 @@ body {
   }
 }
 
+/* Browserstack */
+/* ============================================ */
+
+.bs {
+  padding-top: 50px;
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; */
+}
+
+.bs_label {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+.bs_logo {
+  width: 130px;
+}
+
 /* Footer
   ========================================================== */
 
