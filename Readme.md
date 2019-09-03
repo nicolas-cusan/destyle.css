@@ -178,7 +178,7 @@ Tested with
 
 [![browserstack][browserstack-image]][browserstack-url]
 
-[browserstack-image]: assets/Browserstack-logo.svg
+[browserstack-image]: assets/Browserstack-logo.svg?sanitize=false
 [browserstack-url]: https://www.browserstack.com
 [license-image]: https://img.shields.io/npm/l/destyle.css.svg?style=flat-square
 [license-url]: LICENSE
