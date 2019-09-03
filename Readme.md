@@ -174,12 +174,12 @@ How to create the styles is up to the author, it can be by creating classes, com
 
 This project is heavily inspired by [normalize.css](https://github.com/necolas/normalize.css) and the original [reset](https://meyerweb.com/eric/tools/css/reset/) by Eric Meyer. The source of the test page is from [html5-test-page](https://github.com/cbracco/html5-test-page).
 
-Tested with
+Tested with:
 
-[![browserstack][browserstack-image]][browserstack-url]
+<a href="https://www.browserstack.com">
+  <img src="assets/Browserstack-logo.svg?sanitize=false" alt="browserstack" width="130">
+</a>
 
-[browserstack-image]: assets/Browserstack-logo.svg?sanitize=false
-[browserstack-url]: https://www.browserstack.com
 [license-image]: https://img.shields.io/npm/l/destyle.css.svg?style=flat-square
 [license-url]: LICENSE
 [npm-image]: https://img.shields.io/npm/v/destyle.css.svg?style=flat-square
