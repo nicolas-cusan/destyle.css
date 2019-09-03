@@ -177,7 +177,7 @@ This project is heavily inspired by [normalize.css](https://github.com/necolas/n
 Tested with:
 
 <a href="https://www.browserstack.com">
-  <img src="assets/Browserstack-logo.svg?sanitize=false" alt="browserstack" width="130">
+  <img src="assets/Browserstack-logo.svg?sanitize=false" alt="browserstack" width="160">
 </a>
 
 [license-image]: https://img.shields.io/npm/l/destyle.css.svg?style=flat-square
