@@ -1,4 +1,4 @@
-/*! destyle.css v1.0.10 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v1.0.11 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model
    ========================================================================== */
@@ -241,7 +241,7 @@ textarea {
   vertical-align: middle;
   color: inherit;
   font: inherit;
-  border: inherit;
+  border: 0;
   background: transparent;
   padding: 0;
   margin: 0;
