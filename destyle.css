@@ -31,11 +31,12 @@ html {
    ========================================================================== */
 
 /**
- * Remove the margin in all browsers.
+ * Remove the margin and padding in all browsers.
  */
 
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -44,21 +45,6 @@ body {
 
 main {
   display: block;
-}
-
-/* Vertical rhythm
-   ========================================================================== */
-
-p,
-table,
-blockquote,
-address,
-pre,
-iframe,
-form,
-figure,
-dl {
-  margin: 0;
 }
 
 /* Headings
@@ -73,7 +59,6 @@ h6 {
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
-  margin: 0;
 }
 
 /* Lists (enumeration)
@@ -81,8 +66,6 @@ h6 {
 
 ul,
 ol {
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -91,10 +74,6 @@ ol {
 
 dt {
   font-weight: bold;
-}
-
-dd {
-  margin-left: 0;
 }
 
 /* Grouping content
@@ -111,7 +90,6 @@ hr {
   overflow: visible; /* 2 */
   border: 0;
   border-top: 1px solid;
-  margin: 0;
   clear: both;
   color: inherit;
 }
@@ -243,8 +221,6 @@ textarea {
   font: inherit;
   border: 0;
   background: transparent;
-  padding: 0;
-  margin: 0;
   outline: 0;
   border-radius: 0;
   text-align: inherit;
@@ -313,7 +289,6 @@ button::-moz-focus-inner,
 [type='reset']::-moz-focus-inner,
 [type='submit']::-moz-focus-inner {
   border-style: none;
-  padding: 0;
 }
 
 /**
@@ -332,8 +307,6 @@ button:-moz-focusring,
  */
 
 fieldset {
-  margin: 0;
-  padding: 0;
   border: 0;
   min-width: 0;
 }
@@ -341,15 +314,12 @@ fieldset {
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
  */
 
 legend {
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
   white-space: normal; /* 1 */
 }
 
@@ -367,15 +337,6 @@ progress {
 
 textarea {
   overflow: auto;
-}
-
-/**
- * 1. Remove the padding in IE 10.
- */
-
-[type='checkbox'],
-[type='radio'] {
-  padding: 0; /* 1 */
 }
 
 /**
