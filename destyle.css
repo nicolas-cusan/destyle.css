@@ -1,4 +1,4 @@
-/*! destyle.css v1.0.12 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v1.0.13 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model
    ========================================================================== */
@@ -325,6 +325,14 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+/**
+   * Remove padding
+   */
+
+option {
+  padding: 0;
 }
 
 /**
