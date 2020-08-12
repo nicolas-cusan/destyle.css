@@ -231,8 +231,7 @@ iframe {
  */
 
 button,
-input:not([type="radio"]),
-input:not([type="checkbox"]),
+input:not([type="radio"]):not([type="checkbox"]),
 optgroup,
 select,
 textarea {
@@ -248,12 +247,6 @@ textarea {
   outline: 0;
   border-radius: 0;
   text-align: inherit;
-}
-
-[type="radio"],
-[type="checkbox"] {
-  margin: 0;
-  outline: 0;
 }
 
 /**
@@ -380,12 +373,14 @@ textarea {
 }
 
 /**
- * 1. Remove the padding in IE 10.
+ * Remove margin, padding & outline.
  */
 
 [type="checkbox"],
 [type="radio"] {
-  padding: 0; /* 1 */
+  padding: 0;
+  margin: 0;
+  outline: 0;
 }
 
 /**
