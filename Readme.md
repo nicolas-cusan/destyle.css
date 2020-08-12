@@ -162,8 +162,7 @@ How to create the styles is up to the author, it can be by creating classes, com
 - `hr` is set to be a solid 1px line using `border-top` that inherits its color from its parent's `color` property.
 - Inline elements that carry style (`b`, `i`, `strong`, etc.) are not reset.
 - `canvas` and `iframe` maintain their default width and height (varies depending on the browser).
-- `button`, `select`, `textarea` and `input` (all types), are reset using `appearance: none`.
-- `[type='checkbox']` and `[type='radio']` are set to `appearance: checkbox` and `appearance: radio` respectively (overwriting `appearance: none`) to prevent them from disappearing in iOS.
+- `button`, `select`, `textarea` and `input` (except `[type='checkbox']` and `[type='radio']`), are reset using `appearance: none`.
 - `textarea` maintains its default height.
 - `meter` and `progress` elements are not reset.
 
