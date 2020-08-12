@@ -1,7 +1,7 @@
 /*! destyle.css v1.0.13 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
-/* Reset box-model
-   ========================================================================== */
+/* Reset box-model */
+/* ============================================ */
 
 * {
   box-sizing: border-box;
@@ -12,8 +12,8 @@
   box-sizing: inherit;
 }
 
-/* Document
-   ========================================================================== */
+/* Document */
+/* ============================================ */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -27,8 +27,8 @@ html {
   -webkit-tap-highlight-color: transparent; /* 3*/
 }
 
-/* Sections
-   ========================================================================== */
+/* Sections */
+/* ============================================ */
 
 /**
  * Remove the margin in all browsers.
@@ -46,8 +46,8 @@ main {
   display: block;
 }
 
-/* Vertical rhythm
-   ========================================================================== */
+/* Vertical rhythm */
+/* ============================================ */
 
 p,
 table,
@@ -61,8 +61,8 @@ dl {
   margin: 0;
 }
 
-/* Headings
-   ========================================================================== */
+/* Headings */
+/* ============================================ */
 
 h1,
 h2,
@@ -76,8 +76,8 @@ h6 {
   margin: 0;
 }
 
-/* Lists (enumeration)
-   ========================================================================== */
+/* Lists (enumeration) */
+/* ============================================ */
 
 ul,
 ol {
@@ -86,8 +86,8 @@ ol {
   list-style: none;
 }
 
-/* Lists (definition)
-   ========================================================================== */
+/* Lists (definition) */
+/* ============================================ */
 
 dt {
   font-weight: bold;
@@ -97,8 +97,8 @@ dd {
   margin-left: 0;
 }
 
-/* Grouping content
-   ========================================================================== */
+/* Grouping content */
+/* ============================================ */
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -130,8 +130,8 @@ address {
   font-style: inherit;
 }
 
-/* Text-level semantics
-   ========================================================================== */
+/* Text-level semantics */
+/* ============================================ */
 
 /**
  * Remove the gray background on active links in IE 10.
@@ -204,8 +204,8 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content
-   ========================================================================== */
+/* Embedded content */
+/* ============================================ */
 
 /**
  * Remove the border on images inside links in IE 10.
@@ -223,16 +223,16 @@ iframe {
   vertical-align: bottom;
 }
 
-/* Forms
-   ========================================================================== */
+/* Forms */
+/* ============================================ */
 
 /**
  * Reset form fields to make them styleable
- * 1. Reset radio and checkbox to preserve their look in iOS.
  */
 
 button,
-input,
+input:not([type="radio"]),
+input:not([type="checkbox"]),
 optgroup,
 select,
 textarea {
@@ -250,16 +250,10 @@ textarea {
   text-align: inherit;
 }
 
+[type="radio"],
 [type="checkbox"] {
-  /* 1 */
-  -webkit-appearance: checkbox;
-  appearance: checkbox;
-}
-
-[type="radio"] {
-  /* 1 */
-  -webkit-appearance: radio;
-  appearance: radio;
+  margin: 0;
+  outline: 0;
 }
 
 /**
@@ -325,6 +319,14 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+
+select::-ms-expand {
+  display: none;
 }
 
 /**
@@ -429,8 +431,8 @@ label[for] {
   cursor: pointer;
 }
 
-/* Interactive
-   ========================================================================== */
+/* Interactive */
+/* ============================================ */
 
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
@@ -448,8 +450,16 @@ summary {
   display: list-item;
 }
 
-/* Table
-   ========================================================================== */
+/*
+ * Remove outline for editable content.
+ */
+
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
 
 table {
   border-collapse: collapse;
@@ -471,8 +481,8 @@ th {
   font-weight: bold;
 }
 
-/* Misc
-   ========================================================================== */
+/* Misc */
+/* ============================================ */
 
 /**
  * Add the correct display in IE 10+.
