@@ -111,7 +111,7 @@ Creating two different styles for `h1` is made easy, only the properties for the
 
 ### Buttons
 
-`button` tags have a lot of default styles that can make them cumbersome to use from a styling perspective, especially if they should look like plain things or need to wrap some other content, but `button` tags are the recommended elements to use as click targets for user interactions. Falling back to using `<a href="#">` even with `role="button"` is [not recomended](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role) from an accessibility standpoint as screen readers will recognize `button`s as interactive elements by default and treat them accordingly. `a` should be used when there is the need to link to a page via `href`.
+`button` tags have a lot of default styles that can make them cumbersome to use from a styling perspective, especially if they should look like plain links or need to wrap some other content, but `button` tags are the recommended elements to use as click targets for user interactions. Falling back to using `<a href="#">` even with `role="button"` is [not recomended](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role) from an accessibility standpoint as screen readers will recognize `button`s as interactive elements by default and treat them accordingly. `a` should be used when there is the need to link to a page via `href`.
 
 <!-- prettier-ignore-start -->
 destyle.css resets buttons completely to make them usable as any other element <small>* see note [below](#caveats)</small>.
