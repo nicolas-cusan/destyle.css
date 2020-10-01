@@ -6,13 +6,14 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 
 ## What it does
 
-- Ensures consistency across browsers (thanks normalize.css)
-- Removes spacing (margin & padding)
-- Resets font-size and line-height
-- Prevents the necessity of reseting (most) user agent styles
-- Prevents style inspector bloat by only targeting what is necessary
-- Contributes to the separation of presentation and semantics
+- Ensures consistency across browsers (thanks normalize.css).
+- Removes spacing and set the arrange the space inside the box (margin & padding).
+- Resets font-size, font-family, font-color, font-style and line-height.
+- Prevents the necessity of reseting (most) user agent styles.
+- Prevents style inspector bloat by only targeting what is necessary.
+- Contributes to the separation of presentation and semantics (<header></header>, <main></main>,<section></section> and <footer></footer>)
 - Works well with all kind of styling approaches, atomic libraries like [tachyons](https://tachyons.io/), component based styling like css-in-js in [React](https://reactjs.org), good 'ol css, ...
+- uses the positiin for fix image or font & stick the image & font (position:static,stick,etc.).
 
 ## Why?
 
@@ -33,7 +34,7 @@ Download: https://raw.githubusercontent.com/nicolas-cusan/destyle.css/master/des
 - Chrome
 - Edge
 - Firefox ESR+
-- Internet Explorer 10+
+- Internet Explorer
 - Safari 8+
 - Opera
 
@@ -44,7 +45,10 @@ Include `destyle.css` in the `head` of your HTML file before your main styleshee
 ### Recommended
 
 Add your base font and color styles to the `body` element in your stylesheet, all other elements will inherit the style from the body.
-
+add style to body by three method
+a) Inline
+b) internal
+c) External 
 ```css
 /* app.css */
 
