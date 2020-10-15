@@ -210,15 +210,10 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 
-img {
-  border-style: none;
-  vertical-align: bottom;
-}
-
+img,
 embed,
 object,
 iframe {
-  border: 0;
   vertical-align: bottom;
 }
 

@@ -158,7 +158,7 @@ How to create the styles is up to the author, it can be by creating classes, com
 ## Rules
 
 - The box model is set to `border-box` for `*`, `::before` and `::after`.
-- The `border-style` is set to `solid` for `*`, `::before` and `::after`, the `border-width` is set to 0 (to hide the borders).
+- The `border-style` is set to `solid` for `*`, `::before` and `::after` and the `border-width` is set to 0 (to hide the borders).
 - `code`, `pre`, `kbd`, `samp` maintain a monospaced font-family.
 - `hr` is set to be a solid 1px line using `border-top` that inherits its color from its parent's `color` property.
 - Inline elements that carry style (`b`, `i`, `strong`, etc.) are not reset.
@@ -166,6 +166,7 @@ How to create the styles is up to the author, it can be by creating classes, com
 - `button`, `select`, `textarea` and `input` (except `[type='checkbox']` and `[type='radio']`), are reset using `appearance: none`.
 - `textarea` maintains its default height.
 - `meter` and `progress` elements are not reset.
+- `img` has `vertical-align` set to `bottom` to prevent alignment issues.
 
 ## Caveats
 
