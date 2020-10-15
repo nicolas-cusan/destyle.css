@@ -1,15 +1,14 @@
-/*! destyle.css v1.0.15 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v2.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
-/* Reset box-model */
+/* Reset box-model and set borders */
 /* ============================================ */
 
-* {
-  box-sizing: border-box;
-}
-
+*,
 ::before,
 ::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
 }
 
 /* Document */
@@ -110,7 +109,7 @@ hr {
   height: 0; /* 1 */
   overflow: visible; /* 2 */
   border: 0;
-  border-top: 1px solid;
+  border-top: 1px;
   margin: 0;
   clear: both;
   color: inherit;
