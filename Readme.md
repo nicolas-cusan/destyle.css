@@ -174,6 +174,10 @@ How to create the styles is up to the author, it can be by creating classes, com
 - `range`, `color` are affected by `appearance: none` but are not completely destyled (varies depending on the browser).
 - `button` elements that have a fixed `height` will center its content vertically (can not be reset).
 
+## Changelog
+
+- **v2.0.0.** 2020-10-15 - Add `border-style: solid` and `border-width: 0` to `*, ::before, ::after` selector. This change might affect how borders are used and therefor is considered a braking change. The benefit is that simply adding a border-width to an element will display a border without the need to set the border-style explicitly.
+
 ## Credits
 
 This project is heavily inspired by [normalize.css](https://github.com/necolas/normalize.css) and the original [reset](https://meyerweb.com/eric/tools/css/reset/) by Eric Meyer. The source of the test page is from [html5-test-page](https://github.com/cbracco/html5-test-page).
