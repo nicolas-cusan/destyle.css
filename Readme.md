@@ -7,8 +7,8 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 ## What it does
 
 - Ensures consistency across browsers (thanks normalize.css)
-- Removes spacing (margin & padding)
-- Resets font-size and line-height
+- Removes spacing (margin & padding) and resets font-size and line-height
+- Sets some sensible defaults (see [rules](#rules))
 - Prevents the necessity of reseting (most) user agent styles
 - Prevents style inspector bloat by only targeting what is necessary
 - Contributes to the separation of presentation and semantics
@@ -158,6 +158,7 @@ How to create the styles is up to the author, it can be by creating classes, com
 ## Rules
 
 - The box model is set to `border-box` for `*`, `::before` and `::after`.
+- The `border-style` is set to `solid` for `*`, `::before` and `::after`, the `border-width` is set to 0 (to hide the borders).
 - `code`, `pre`, `kbd`, `samp` maintain a monospaced font-family.
 - `hr` is set to be a solid 1px line using `border-top` that inherits its color from its parent's `color` property.
 - Inline elements that carry style (`b`, `i`, `strong`, etc.) are not reset.
