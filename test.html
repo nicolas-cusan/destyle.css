@@ -50,8 +50,16 @@
               <li><a href="#forms__checkbox">Checkboxes</a></li>
               <li><a href="#forms__radio">Radio buttons</a></li>
               <li><a href="#forms__textareas">Textareas</a></li>
+              <li><a href="#forms__files">Files</a></li>
               <li><a href="#forms__html5">HTML5 inputs</a></li>
               <li><a href="#forms__action">Action buttons</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#interactive">Interactive Content</a>
+            <ul>
+              <li><a href="#interactive__summary_detail">Summary & detail</a></li>
+              <li><a href="#interactive__contenteditable">Editable content</a></li>
             </ul>
           </li>
         </ul>
@@ -375,6 +383,14 @@
               </p>
             </fieldset>
             <p><a href="#top">[Top]</a></p>
+            <fieldset id="forms__files">
+              <legend>Files</legend>
+              <p>
+                <label for="input__file" class="valid">File</label>
+                <input id="input__file" type="file">
+              </p>
+            </fieldset>
+            <p><a href="#top">[Top]</a></p>
             <fieldset id="forms__html5">
               <legend>HTML5 inputs</legend>
               <p>
@@ -429,9 +445,28 @@
             <p><a href="#top">[Top]</a></p>
           </form>
         </section>
+        <section id="interactive">
+          <header><h1>Interactive elements</h1></header>
+          <article id="interactive__summary_detail">
+            <header><h2>Summary & Detail</h2></header>
+            <details>
+              <summary>
+                Summary
+              </summary>
+              <p>The <code>&lt;details&gt;</code> HTML element creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <code>&lt;summary&gt;</code> element.</p>
+            </details>
+          </article>
+
+          <article id="interactive__contenteditable">
+            <header><h2>Editable content</h2></header>
+            <div contenteditable>
+              The content of this <code>&lt;div&gt;</code> tag can be edited via the <code>[contenteditable]</code> attribute.
+            </div>
+          </article>
+        </section>
       </main>
       <footer role="contentinfo">
-        <p>Made by <a href="http://twitter.com/cbracco">@cbracco</a>. Code on <a href="http://github.com/cbracco/html5-test-page">GitHub</a>.</p>
+        <p>Originaly made by <a href="http://twitter.com/cbracco">@cbracco</a> (<a href="http://github.com/cbracco/html5-test-page">GitHub</a>). And expanded by <a href="http://twitter.com/n_cusan">@n_cusan</a></p>
       </footer>
     </div>
   </body>
