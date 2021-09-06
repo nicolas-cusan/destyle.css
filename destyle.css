@@ -1,4 +1,4 @@
-/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -70,7 +70,6 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  line-height: inherit;
   font-weight: inherit;
   margin: 0;
 }
@@ -147,7 +146,6 @@ a {
  */
 
 abbr[title] {
-  text-decoration: underline; /* 2 */
   text-decoration: underline dotted; /* 2 */
 }
 
@@ -201,13 +199,14 @@ sup {
   top: -0.5em;
 }
 
-/* Embedded content */
+/* Replaced content */
 /* ============================================ */
 
 /**
  * Prevent vertical alignment issues.
  */
 
+svg,
 img,
 embed,
 object,
@@ -219,7 +218,9 @@ iframe {
 /* ============================================ */
 
 /**
- * Reset form fields to make them styleable
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
  */
 
 button,
@@ -227,7 +228,7 @@ input,
 optgroup,
 select,
 textarea {
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* 1 */
   appearance: none;
   vertical-align: middle;
   color: inherit;
@@ -235,9 +236,9 @@ textarea {
   background: transparent;
   padding: 0;
   margin: 0;
-  outline: 0;
   border-radius: 0;
   text-align: inherit;
+  text-transform: inherit; /* 2 */
 }
 
 /**
@@ -255,29 +256,7 @@ textarea {
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
+ * Correct cursors for clickable elements.
  */
 
 button,
@@ -285,46 +264,25 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
 }
 
-button[disabled],
-[type="button"][disabled],
-[type="reset"][disabled],
-[type="submit"][disabled] {
+button:disabled,
+[type="button"]:disabled,
+[type="reset"]:disabled,
+[type="submit"]:disabled {
   cursor: default;
 }
 
 /**
- * Remove the inner border and padding in Firefox.
+ * Improve outlines for Firefox and unify style with input elements & buttons.
  */
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+:-moz-focusring {
+  outline: auto;
 }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Remove arrow in IE10 & IE11
- */
-
-select::-ms-expand {
-  display: none;
+select:disabled {
+  opacity: inherit;
 }
 
 /**
@@ -345,19 +303,8 @@ fieldset {
   min-width: 0;
 }
 
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
 legend {
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  padding: 0;
 }
 
 /**
@@ -403,7 +350,7 @@ textarea {
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
+ * 2. Fix font inheritance.
  */
 
 ::-webkit-file-upload-button {
@@ -442,16 +389,19 @@ summary {
  * Remove outline for editable content.
  */
 
-[contenteditable] {
-  outline: none;
+[contenteditable]:focus {
+  outline: auto;
 }
 
-/* Table */
+/* Tables */
 /* ============================================ */
 
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  border-color: inherit; /* 1 */
 }
 
 caption {
@@ -467,23 +417,4 @@ th {
 th {
   text-align: left;
   font-weight: bold;
-}
-
-/* Misc */
-/* ============================================ */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
 }
