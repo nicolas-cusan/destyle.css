@@ -164,20 +164,24 @@ destyle.css resets buttons completely to make them usable as any other element <
 
 ## Changelog
 
-- **v3.0.0.** 2021-09-03
-  - Remove IE support 🎉
-  - Bring back `outline` for focusable elements
-  - Remove redundant `line-height: inherit` rule from headings reset
-  - Remove redundant `text-decoration` rule from `abbr`
-  - Added `svg` selector to replaced content rule
-  - Added `text-transform: inherit` rule to form elements
-  - Replaced `[disabled]` selector with `:disabled`
-  - Removed `::-moz-focus-inner` rules for old Firefox versions
-  - Improved `:-moz-focusring` style, no more dotted outline
-  - Destyled `select:disabled` in Chrome
-  - Add outline to focused `[contenteditable]` elements
-  - Fixed border color inheritance for `table` borders in Chrome
-- **v2.0.0.** 2020-10-15 - Add `border-style: solid` and `border-width: 0` to `*, ::before, ::after` selector. This change might affect how borders are used and therefor is considered a breaking change. The benefit is that simply adding a border-width to an element will display a border without the need to set the border-style explicitly.
+### **v3.0.0.** 2021-09-03
+
+- Remove IE support 🎉
+- Bring back `outline` for focusable elements
+- Remove redundant `line-height: inherit` rule from headings reset
+- Remove redundant `text-decoration` rule from `abbr`
+- Added `svg` selector to replaced content rule
+- Added `text-transform: inherit` rule to form elements
+- Replaced `[disabled]` selector with `:disabled`
+- Removed `::-moz-focus-inner` rules for old Firefox versions
+- Improved `:-moz-focusring` style, no more dotted outline
+- Destyled `select:disabled` in Chrome
+- Add outline to focused `[contenteditable]` elements
+- Fixed border color inheritance for `table` borders in Chrome
+
+### **v2.0.0.** 2020-10-15
+
+- Add `border-style: solid` and `border-width: 0` to `*, ::before, ::after` selector. This change might affect how borders are used and therefor is considered a breaking change. The benefit is that simply adding a border-width to an element will display a border without the need to set the border-style explicitly.
 
 ## Why?
 
