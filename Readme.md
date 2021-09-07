@@ -14,7 +14,7 @@ Opinionated [reset stylesheet](https://cssreset.com/what-is-a-css-reset/) that p
 - Contributes to the separation of presentation and semantics
 - Sets sensible default styles (see [rules](#rules))
 - Well suited for utility class libraries and large codebases
-- Supports modern browsers, therefor is small in size (~0.95kb, minified gzipped)
+- Made for modern browsers only, therefor small in size (~0.95kb)
 
 ## Installation
 
