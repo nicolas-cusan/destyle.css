@@ -164,6 +164,10 @@ destyle.css resets buttons completely to make them usable as any other element <
 
 ## Changelog
 
+### **v3.0.1.** 2021-12-07
+
+- Add `border-collapse: collapse` to tables.
+
 ### **v3.0.0.** 2021-09-03
 
 - Remove IE support 🎉
