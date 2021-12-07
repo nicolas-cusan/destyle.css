@@ -1,6 +1,6 @@
 {
   "name": "destyle.css",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Opinionated reset stylesheet that provides a clean slate for styling your html.",
   "main": "destyle.css",
   "style": "destyle.css",
