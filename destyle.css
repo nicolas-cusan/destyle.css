@@ -1,4 +1,4 @@
-/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v4.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -242,20 +242,6 @@ textarea {
 }
 
 /**
- * Reset radio and checkbox appearance to preserve their look in iOS.
- */
-
-[type="checkbox"] {
-  -webkit-appearance: checkbox;
-  appearance: checkbox;
-}
-
-[type="radio"] {
-  -webkit-appearance: radio;
-  appearance: radio;
-}
-
-/**
  * Correct cursors for clickable elements.
  */
 
@@ -333,7 +319,7 @@ textarea {
 }
 
 /**
- * 1. Correct the outline style in Safari.
+ * Correct the outline style in Safari.
  */
 
 [type="search"] {
@@ -356,6 +342,13 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+}
+
+/**
+ * Fix appearance for Firefox
+ */
+[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /**
