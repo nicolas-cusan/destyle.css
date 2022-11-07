@@ -164,6 +164,11 @@ destyle.css resets buttons completely to make them usable as any other element <
 
 ## Changelog
 
+### **v4.0.0.** 20212-11-07
+
+- Add `appearance: none` to checkboxes and radio buttons.
+- Fix issue in Firefox for `input[type="number"]`
+
 ### **v3.0.2.** 2021-12-07
 
 - Add `border-collapse: collapse` to tables.
