@@ -95,13 +95,12 @@ code {
   border-bottom: 4px solid rgba(0, 0, 0, 0.15);
 }
 
-
-  .actions {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem
-  }
-
+ .actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
 
 .btn {
   background-color: #333;
