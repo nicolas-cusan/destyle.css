@@ -95,12 +95,13 @@ code {
   border-bottom: 4px solid rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 500px) {
+
   .actions {
     display: flex;
     align-items: center;
+    gap: 1.2rem
   }
-}
+
 
 .btn {
   background-color: #333;
@@ -116,10 +117,6 @@ code {
 .btn-outline {
   background-color: transparent;
   color: #333;
-}
-
-.btn + .btn {
-  margin-left: 1.2rem;
 }
 
 /* Footer
