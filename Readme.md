@@ -164,13 +164,10 @@ destyle.css resets buttons completely to make them usable as any other element <
 
 ## Changelog
 
-<<<<<<< HEAD
 ### **v4.0.1.** 2024-01-21
 
 - Add `min-width: 0` to allow proper text wrappig in flex containers.
 
-=======
->>>>>>> 489e813950f67427c5e57f6c90d8c29ad07c9390
 ### **v4.0.0.** 2022-11-07
 
 - Add `appearance: none` to checkboxes and radio buttons.
